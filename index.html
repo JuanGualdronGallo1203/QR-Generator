@@ -19,7 +19,10 @@
             <option value="500x500">Grande (500x500)</option>
         </select>
 
-        <button onclick="generateQR()">Generar QR</button>
+        <button 
+        onclick="qrimg.src='https://api.qr-server.com/v1/create-qr-code/?size=150x150&data='+qr.value">
+            Generate QR
+        </button>
 
         <img id="qrimg" alt="Código QR generado aquí" />
 
