@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE GENERATOR</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Códigos QR</h1>
+
+        <input id="qr" placeholder="Ingresa URL o texto" autocomplete="off">
+
+        <select id="size">
+            <option value="150x150">Pequeño (150x150)</option>
+            <option value="300x300" selected>Mediano (300x300)</option>
+            <option value="500x500">Grande (500x500)</option>
+        </select>
+
+        <button onclick="generateQR()">Generar QR</button>
+
+        <img id="qrimg" alt="Código QR generado aquí" />
+
+        <a id="downloadBtn" download="qrcode.png" style="display:none;">Descargar QR</a>
+        <script src="./main.js"></script>
+    </div>
+</body>
+
+</html>
